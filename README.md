@@ -54,4 +54,59 @@ This project helps users:
 ---
 
 ## 📁 Project Structure
+flipkart_recommendation/
+├── app.py # Streamlit frontend
+├── vector_build.py # Build vector store from reviews
+├── evaluation/
+│ ├── evaluate.py # RMSE, Precision@K, F1
+│ ├── generate_sentiment_test.py
+│ └── sentiment_test_labeled.csv
+├── data/
+│ ├── analyzed_reviews.csv
+│ ├── final_processed_reviews.csv
+│ └── cleaned_final_project_data.csv
+├── models/
+│ └── vector_store/
+│ ├── index.faiss
+│ └── index.pkl
+├── requirements.txt
+└── README.md
 
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ How to Run
+
+### ✅ 1. Install Ollama
+
+Download from: https://ollama.com/download  
+Then run:
+
+```bash
+ollama run gemma:2b
+# or
+ollama run mistral
+✅ 2. Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+✅ 3. Run the App
+bash
+Copy
+Edit
+streamlit run app.py
+💡 Sample Queries
+“Is the camera good?”
+
+“Why is this product top rated?”
+
+“Is the battery long-lasting?”
+
+“How is the design of this phone?”
+
+📝 Author
+Sivasankaran K
