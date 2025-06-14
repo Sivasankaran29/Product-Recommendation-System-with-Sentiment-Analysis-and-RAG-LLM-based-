@@ -1,0 +1,8 @@
+pandas
+streamlit
+textblob
+langchain
+openai
+faiss-cpu
+tiktoken
+python-dotenv
